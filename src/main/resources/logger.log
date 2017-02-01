@@ -1,0 +1,618 @@
+25/01/2017 3:49 [http-nio-8080-exec-6] INFO - <User was found>
+25/01/2017 3:49 [http-nio-8080-exec-7] INFO - <User was found>
+25/01/2017 3:49 [http-nio-8080-exec-7] INFO - <User was found>
+25/01/2017 3:49 [http-nio-8080-exec-7] INFO - <All courses are provided>
+25/01/2017 3:49 [http-nio-8080-exec-9] INFO - <User was found>
+25/01/2017 3:49 [http-nio-8080-exec-9] INFO - <User was found>
+25/01/2017 3:49 [http-nio-8080-exec-9] INFO - <The course was found>
+25/01/2017 3:49 [http-nio-8080-exec-9] INFO - <Archive was found>
+25/01/2017 3:49 [http-nio-8080-exec-1] INFO - <Archive was found>
+25/01/2017 3:49 [http-nio-8080-exec-8] INFO - <The user has enrolled to a course>
+25/01/2017 3:50 [http-nio-8080-exec-9] INFO - <User was found>
+25/01/2017 3:50 [http-nio-8080-exec-1] INFO - <User was found>
+25/01/2017 3:50 [http-nio-8080-exec-1] INFO - <User was found>
+25/01/2017 3:50 [http-nio-8080-exec-1] INFO - <The course was found>
+25/01/2017 3:50 [http-nio-8080-exec-1] INFO - <User was found>
+25/01/2017 3:50 [http-nio-8080-exec-1] INFO - <User was found>
+25/01/2017 3:50 [http-nio-8080-exec-1] INFO - <The course was found>
+25/01/2017 3:50 [http-nio-8080-exec-1] INFO - <User was found>
+25/01/2017 3:50 [http-nio-8080-exec-1] INFO - <User was found>
+25/01/2017 3:50 [http-nio-8080-exec-1] INFO - <The course was found>
+25/01/2017 3:50 [http-nio-8080-exec-1] INFO - <Archives for teacher were found>
+25/01/2017 3:50 [http-nio-8080-exec-4] INFO - <Teachers were found>
+25/01/2017 3:50 [http-nio-8080-exec-3] INFO - <User was found>
+25/01/2017 3:50 [http-nio-8080-exec-3] INFO - <User was found>
+25/01/2017 3:50 [http-nio-8080-exec-3] INFO - <All courses are provided>
+25/01/2017 3:50 [http-nio-8080-exec-6] INFO - <Archive was found>
+25/01/2017 3:50 [http-nio-8080-exec-9] INFO - <Archive was found>
+25/01/2017 3:57 [http-nio-8080-exec-3] INFO - <User was found>
+25/01/2017 3:57 [http-nio-8080-exec-5] INFO - <User was found>
+25/01/2017 3:57 [http-nio-8080-exec-5] INFO - <User was found>
+25/01/2017 3:57 [http-nio-8080-exec-5] INFO - <The course was found>
+25/01/2017 3:57 [http-nio-8080-exec-5] INFO - <User was found>
+25/01/2017 3:57 [http-nio-8080-exec-5] INFO - <User was found>
+25/01/2017 3:57 [http-nio-8080-exec-5] INFO - <The course was found>
+25/01/2017 3:57 [http-nio-8080-exec-5] INFO - <User was found>
+25/01/2017 3:57 [http-nio-8080-exec-5] INFO - <User was found>
+25/01/2017 3:57 [http-nio-8080-exec-5] INFO - <The course was found>
+25/01/2017 3:57 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+25/01/2017 3:57 [http-nio-8080-exec-6] INFO - <Teachers were found>
+25/01/2017 3:57 [http-nio-8080-exec-9] INFO - <User was found>
+25/01/2017 3:57 [http-nio-8080-exec-9] INFO - <User was found>
+25/01/2017 3:57 [http-nio-8080-exec-9] INFO - <All courses are provided>
+25/01/2017 3:57 [http-nio-8080-exec-1] INFO - <Archive was found>
+25/01/2017 3:57 [http-nio-8080-exec-3] INFO - <Archive was found>
+25/01/2017 4:53 [http-nio-8080-exec-6] INFO - <User was found>
+25/01/2017 5:00 [http-nio-8080-exec-6] INFO - <User was found>
+25/01/2017 5:00 [http-nio-8080-exec-8] INFO - <All categories are provided>
+25/01/2017 5:00 [http-nio-8080-exec-7] ERROR - <java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).>
+25/01/2017 5:00 [http-nio-8080-exec-9] ERROR - <java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).>
+25/01/2017 5:02 [http-nio-8080-exec-5] INFO - <User was found>
+25/01/2017 5:02 [http-nio-8080-exec-7] INFO - <All categories are provided>
+25/01/2017 5:02 [http-nio-8080-exec-4] INFO - <User was found>
+25/01/2017 5:02 [http-nio-8080-exec-6] INFO - <All categories are provided>
+25/01/2017 5:05 [http-nio-8080-exec-5] INFO - <User was found>
+25/01/2017 5:05 [http-nio-8080-exec-7] INFO - <All categories are provided>
+25/01/2017 5:05 [http-nio-8080-exec-10] ERROR - <java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).>
+25/01/2017 5:05 [http-nio-8080-exec-8] ERROR - <java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).>
+25/01/2017 5:09 [http-nio-8080-exec-2] INFO - <User was found>
+25/01/2017 5:09 [http-nio-8080-exec-4] INFO - <All categories are provided>
+25/01/2017 5:10 [http-nio-8080-exec-6] ERROR - <java.sql.SQLException: Parameter index out of range (1 > number of parameters, which is 0).>
+25/01/2017 5:12 [http-nio-8080-exec-5] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-7] INFO - <All categories are provided>
+25/01/2017 5:12 [http-nio-8080-exec-10] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-10] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-10] INFO - <All courses for category are provided>
+25/01/2017 5:12 [http-nio-8080-exec-2] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-2] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-2] INFO - <The course was found>
+25/01/2017 5:12 [http-nio-8080-exec-2] INFO - <Archive was found>
+25/01/2017 5:12 [http-nio-8080-exec-4] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-4] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-4] INFO - <All courses for category are provided>
+25/01/2017 5:12 [http-nio-8080-exec-6] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-6] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-6] INFO - <The course was found>
+25/01/2017 5:12 [http-nio-8080-exec-6] INFO - <Archive was found>
+25/01/2017 5:12 [http-nio-8080-exec-8] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-8] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-8] INFO - <All courses for category are provided>
+25/01/2017 5:12 [http-nio-8080-exec-10] INFO - <Archive was found>
+25/01/2017 5:12 [http-nio-8080-exec-7] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-7] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-7] INFO - <All courses for category are provided>
+25/01/2017 5:12 [http-nio-8080-exec-1] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-1] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-1] INFO - <All courses for category are provided>
+25/01/2017 5:12 [http-nio-8080-exec-3] INFO - <Archive was found>
+25/01/2017 5:12 [http-nio-8080-exec-4] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-4] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-4] INFO - <All courses for category are provided>
+25/01/2017 5:12 [http-nio-8080-exec-9] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-9] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-9] INFO - <All courses for category are provided>
+25/01/2017 5:12 [http-nio-8080-exec-3] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-3] INFO - <User was found>
+25/01/2017 5:12 [http-nio-8080-exec-3] INFO - <All courses for category are provided>
+25/01/2017 5:13 [http-nio-8080-exec-8] INFO - <User was found>
+25/01/2017 5:13 [http-nio-8080-exec-8] INFO - <User was found>
+25/01/2017 5:13 [http-nio-8080-exec-8] INFO - <All courses for category are provided>
+28/01/2017 2:40 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 2:57 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:05 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:13 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:13 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:15 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:17 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:18 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:22 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:22 [http-nio-8080-exec-6] INFO - <All categories are provided>
+28/01/2017 3:23 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:23 [http-nio-8080-exec-6] INFO - <All categories are provided>
+28/01/2017 3:23 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:23 [http-nio-8080-exec-6] INFO - <All categories are provided>
+28/01/2017 3:25 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:25 [http-nio-8080-exec-6] INFO - <All categories are provided>
+28/01/2017 3:26 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:26 [http-nio-8080-exec-5] INFO - <All categories are provided>
+28/01/2017 3:27 [http-nio-8080-exec-6] INFO - <User was found>
+28/01/2017 3:27 [http-nio-8080-exec-10] INFO - <All categories are provided>
+28/01/2017 3:29 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:29 [http-nio-8080-exec-6] INFO - <All categories are provided>
+28/01/2017 3:31 [http-nio-8080-exec-4] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <The course was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <The course was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <The course was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+28/01/2017 3:31 [http-nio-8080-exec-8] INFO - <Teachers were found>
+28/01/2017 3:31 [http-nio-8080-exec-10] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-10] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-10] INFO - <All courses are provided>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <All categories are provided>
+28/01/2017 3:31 [http-nio-8080-exec-9] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <The course was found>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <The course was found>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <The course was found>
+28/01/2017 3:31 [http-nio-8080-exec-2] INFO - <Archives for teacher were found>
+28/01/2017 3:31 [http-nio-8080-exec-4] INFO - <Teachers were found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <User was found>
+28/01/2017 3:31 [http-nio-8080-exec-6] INFO - <All courses are provided>
+28/01/2017 3:31 [http-nio-8080-exec-10] INFO - <All categories are provided>
+29/01/2017 12:23 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-10] INFO - <All categories are provided>
+29/01/2017 12:23 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-4] INFO - <All courses for user are provided>
+29/01/2017 12:23 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-6] INFO - <The course was found>
+29/01/2017 12:23 [http-nio-8080-exec-6] INFO - <Archive was found>
+29/01/2017 12:23 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-8] INFO - <All courses for user are provided>
+29/01/2017 12:23 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-10] INFO - <The course was found>
+29/01/2017 12:23 [http-nio-8080-exec-10] INFO - <Archive was found>
+29/01/2017 12:23 [http-nio-8080-exec-2] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-2] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-2] INFO - <All courses for user are provided>
+29/01/2017 12:23 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-4] INFO - <The course was found>
+29/01/2017 12:23 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 12:23 [http-nio-8080-exec-4] INFO - <The course was found>
+29/01/2017 12:23 [http-nio-8080-exec-4] INFO - <Archives for user were found>
+29/01/2017 12:34 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 12:34 [http-nio-8080-exec-10] INFO - <All categories are provided>
+29/01/2017 12:34 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 12:34 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 12:34 [http-nio-8080-exec-3] INFO - <All courses for user are provided>
+29/01/2017 12:34 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 12:34 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 12:34 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 12:34 [http-nio-8080-exec-5] INFO - <Archive was found>
+29/01/2017 12:34 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 12:34 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 12:34 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 12:34 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 12:34 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 12:34 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 12:34 [http-nio-8080-exec-9] INFO - <Archives for user were found>
+29/01/2017 12:41 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 12:41 [http-nio-8080-exec-5] INFO - <All archives were found>
+29/01/2017 12:41 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 12:41 [http-nio-8080-exec-1] INFO - <All courses are provided>
+29/01/2017 12:41 [http-nio-8080-exec-3] INFO - <All categories are provided>
+29/01/2017 1:01 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:01 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:01 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:01 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:01 [http-nio-8080-exec-1] INFO - <All courses for user are provided>
+29/01/2017 1:01 [http-nio-8080-exec-2] INFO - <Archives for user were found>
+29/01/2017 1:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-8] INFO - <All categories are provided>
+29/01/2017 1:02 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:02 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:02 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-1] INFO - <All courses for category are provided>
+29/01/2017 1:02 [http-nio-8080-exec-3] INFO - <Archive was found>
+29/01/2017 1:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-6] INFO - <All courses for category are provided>
+29/01/2017 1:02 [http-nio-8080-exec-8] INFO - <Archive was found>
+29/01/2017 1:02 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-1] INFO - <All courses for category are provided>
+29/01/2017 1:02 [http-nio-8080-exec-3] INFO - <Archive was found>
+29/01/2017 1:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:02 [http-nio-8080-exec-6] INFO - <All courses for category are provided>
+29/01/2017 1:04 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:04 [http-nio-8080-exec-5] INFO - <All categories are provided>
+29/01/2017 1:04 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:04 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:04 [http-nio-8080-exec-7] INFO - <All courses for category are provided>
+29/01/2017 1:04 [http-nio-8080-exec-9] INFO - <Archive was found>
+29/01/2017 1:04 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:04 [http-nio-8080-exec-9] INFO - <All categories are provided>
+29/01/2017 1:04 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:04 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:04 [http-nio-8080-exec-1] INFO - <All courses for category are provided>
+29/01/2017 1:04 [http-nio-8080-exec-4] INFO - <Archive was found>
+29/01/2017 1:04 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:04 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:04 [http-nio-8080-exec-7] INFO - <All courses for category are provided>
+29/01/2017 1:04 [http-nio-8080-exec-9] INFO - <Archive was found>
+29/01/2017 1:07 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:07 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:07 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:07 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:07 [http-nio-8080-exec-9] INFO - <All courses for category are provided>
+29/01/2017 1:07 [http-nio-8080-exec-2] INFO - <Archive was found>
+29/01/2017 1:07 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:07 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:07 [http-nio-8080-exec-4] INFO - <All courses for category are provided>
+29/01/2017 1:07 [http-nio-8080-exec-6] INFO - <Archive was found>
+29/01/2017 1:07 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:07 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:07 [http-nio-8080-exec-9] INFO - <All courses for category are provided>
+29/01/2017 1:10 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:10 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:10 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:10 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:10 [http-nio-8080-exec-9] INFO - <All courses for category are provided>
+29/01/2017 1:10 [http-nio-8080-exec-10] INFO - <Archive was found>
+29/01/2017 1:10 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:10 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:10 [http-nio-8080-exec-6] INFO - <All courses for category are provided>
+29/01/2017 1:10 [http-nio-8080-exec-8] INFO - <Archive was found>
+29/01/2017 1:14 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:14 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:16 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:16 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:17 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:17 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:18 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:18 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:18 [http-nio-8080-exec-9] ERROR - <com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'elective.archives' doesn't exist>
+29/01/2017 1:19 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:19 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:19 [http-nio-8080-exec-9] ERROR - <com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'elective.archives' doesn't exist>
+29/01/2017 1:20 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:20 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:20 [http-nio-8080-exec-9] ERROR - <com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'elective.archives' doesn't exist>
+29/01/2017 1:22 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:22 [http-nio-8080-exec-9] INFO - <All categories are provided>
+29/01/2017 1:22 [http-nio-8080-exec-1] ERROR - <com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'elective.archives' doesn't exist>
+29/01/2017 1:22 [http-nio-8080-exec-4] ERROR - <com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'elective.archives' doesn't exist>
+29/01/2017 1:24 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:24 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:24 [http-nio-8080-exec-9] ERROR - <com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown column 'archives.course_id' in 'on clause'>
+29/01/2017 1:25 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-5] INFO - <All categories are provided>
+29/01/2017 1:25 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-8] INFO - <The course was found>
+29/01/2017 1:25 [http-nio-8080-exec-8] INFO - <Archives for category were found>
+29/01/2017 1:25 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-7] INFO - <The course was found>
+29/01/2017 1:25 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-7] INFO - <The course was found>
+29/01/2017 1:25 [http-nio-8080-exec-7] INFO - <Archives for category were found>
+29/01/2017 1:25 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-4] INFO - <The course was found>
+29/01/2017 1:25 [http-nio-8080-exec-4] INFO - <Archives for category were found>
+29/01/2017 1:25 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 1:25 [http-nio-8080-exec-9] INFO - <Archives for category were found>
+29/01/2017 1:25 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 1:25 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 1:25 [http-nio-8080-exec-5] INFO - <Archives for category were found>
+29/01/2017 1:25 [http-nio-8080-exec-2] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-2] INFO - <User was found>
+29/01/2017 1:25 [http-nio-8080-exec-2] INFO - <The course was found>
+29/01/2017 1:25 [http-nio-8080-exec-2] INFO - <Archives for category were found>
+29/01/2017 1:29 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:29 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:29 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:29 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:29 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 1:29 [http-nio-8080-exec-9] INFO - <Archives for category were found>
+29/01/2017 1:29 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:29 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:29 [http-nio-8080-exec-6] INFO - <The course was found>
+29/01/2017 1:29 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:29 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:29 [http-nio-8080-exec-6] INFO - <The course was found>
+29/01/2017 1:29 [http-nio-8080-exec-6] INFO - <Archives for category were found>
+29/01/2017 1:30 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:30 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:30 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:30 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:30 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 1:30 [http-nio-8080-exec-9] INFO - <Archives for category were found>
+29/01/2017 1:30 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:30 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:30 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 1:30 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:30 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:30 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 1:30 [http-nio-8080-exec-5] INFO - <Archives for category were found>
+29/01/2017 1:31 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:31 [http-nio-8080-exec-5] INFO - <All categories are provided>
+29/01/2017 1:31 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:31 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:31 [http-nio-8080-exec-8] INFO - <The course was found>
+29/01/2017 1:31 [http-nio-8080-exec-8] INFO - <Archives for category were found>
+29/01/2017 1:36 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:36 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:36 [http-nio-8080-exec-7] INFO - <The course was found>
+29/01/2017 1:36 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:36 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:36 [http-nio-8080-exec-7] INFO - <The course was found>
+29/01/2017 1:36 [http-nio-8080-exec-7] INFO - <Archives for category were found>
+29/01/2017 1:38 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:38 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:38 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:38 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:38 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 1:38 [http-nio-8080-exec-9] INFO - <Archives for category were found>
+29/01/2017 1:38 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:38 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:38 [http-nio-8080-exec-6] INFO - <The course was found>
+29/01/2017 1:38 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:38 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:38 [http-nio-8080-exec-6] INFO - <The course was found>
+29/01/2017 1:38 [http-nio-8080-exec-6] INFO - <Archives for category were found>
+29/01/2017 1:39 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:39 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:39 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:39 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:39 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 1:39 [http-nio-8080-exec-9] INFO - <Archives for category were found>
+29/01/2017 1:39 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:39 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:39 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 1:39 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:39 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:39 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 1:39 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:39 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:39 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 1:39 [http-nio-8080-exec-5] INFO - <Archives for category were found>
+29/01/2017 1:39 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:39 [http-nio-8080-exec-7] INFO - <All courses are provided>
+29/01/2017 1:39 [http-nio-8080-exec-1] INFO - <Teachers were found>
+29/01/2017 1:41 [http-nio-8080-exec-3] INFO - <Users were found>
+29/01/2017 1:45 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:45 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:45 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:45 [http-nio-8080-exec-7] INFO - <All courses are provided>
+29/01/2017 1:45 [http-nio-8080-exec-9] INFO - <Teachers were found>
+29/01/2017 1:45 [http-nio-8080-exec-10] INFO - <Users were found>
+29/01/2017 1:52 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:52 [http-nio-8080-exec-2] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-2] INFO - <All courses are provided>
+29/01/2017 1:52 [http-nio-8080-exec-3] INFO - <Teachers were found>
+29/01/2017 1:52 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-4] INFO - <All categories are provided>
+29/01/2017 1:52 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-10] INFO - <All courses for category are provided>
+29/01/2017 1:52 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-7] INFO - <The course was found>
+29/01/2017 1:52 [http-nio-8080-exec-7] INFO - <Archive was found>
+29/01/2017 1:52 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-1] INFO - <All courses for category are provided>
+29/01/2017 1:52 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-4] INFO - <The course was found>
+29/01/2017 1:52 [http-nio-8080-exec-4] INFO - <Archive was found>
+29/01/2017 1:52 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-10] INFO - <All courses for category are provided>
+29/01/2017 1:52 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-3] INFO - <All courses for category are provided>
+29/01/2017 1:52 [http-nio-8080-exec-5] INFO - <Archive was found>
+29/01/2017 1:52 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-8] INFO - <All courses for category are provided>
+29/01/2017 1:52 [http-nio-8080-exec-6] INFO - <Archive was found>
+29/01/2017 1:52 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:52 [http-nio-8080-exec-3] INFO - <All courses for category are provided>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-6] INFO - <All categories are provided>
+29/01/2017 1:53 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-1] INFO - <All courses are provided>
+29/01/2017 1:53 [http-nio-8080-exec-3] INFO - <Teachers were found>
+29/01/2017 1:53 [http-nio-8080-exec-2] INFO - <Users were found>
+29/01/2017 1:53 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 1:53 [http-nio-8080-exec-9] INFO - <Archives for category were found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <The course was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <The course was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <The course was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <Archives for category were found>
+29/01/2017 1:53 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-1] INFO - <All categories are provided>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <All courses for category are provided>
+29/01/2017 1:53 [http-nio-8080-exec-10] INFO - <Archive was found>
+29/01/2017 1:53 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-8] INFO - <All courses for category are provided>
+29/01/2017 1:53 [http-nio-8080-exec-1] INFO - <Archive was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-4] INFO - <All courses for category are provided>
+29/01/2017 1:53 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-6] INFO - <All courses for user are provided>
+29/01/2017 1:53 [http-nio-8080-exec-2] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-2] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-2] INFO - <The course was found>
+29/01/2017 1:53 [http-nio-8080-exec-2] INFO - <Archive was found>
+29/01/2017 1:53 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-5] INFO - <All courses for user are provided>
+29/01/2017 1:53 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-7] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-7] INFO - <The course was found>
+29/01/2017 1:53 [http-nio-8080-exec-7] INFO - <Archive was found>
+29/01/2017 1:53 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 1:53 [http-nio-8080-exec-6] INFO - <All courses for user are provided>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <The course was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <The course was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <Archives for user were found>
+29/01/2017 1:54 [http-nio-8080-exec-1] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <The course was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <The course was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <The course was found>
+29/01/2017 1:54 [http-nio-8080-exec-3] INFO - <Archives for teacher were found>
+29/01/2017 1:54 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-8] INFO - <The course was found>
+29/01/2017 1:54 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-8] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-8] INFO - <The course was found>
+29/01/2017 1:54 [http-nio-8080-exec-8] INFO - <Archives were found>
+29/01/2017 1:54 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 1:54 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-5] INFO - <User was found>
+29/01/2017 1:54 [http-nio-8080-exec-5] INFO - <The course was found>
+29/01/2017 1:54 [http-nio-8080-exec-5] INFO - <Archives were found>
+29/01/2017 2:01 [http-nio-8080-exec-4] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-6] INFO - <The course was found>
+29/01/2017 2:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-6] INFO - <The course was found>
+29/01/2017 2:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-6] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-6] INFO - <The course was found>
+29/01/2017 2:02 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+29/01/2017 2:02 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 2:02 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 2:02 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 2:02 [http-nio-8080-exec-9] INFO - <Archives were found>
+29/01/2017 2:06 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-10] INFO - <The course was found>
+29/01/2017 2:06 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-10] INFO - <The course was found>
+29/01/2017 2:06 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-10] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-10] INFO - <The course was found>
+29/01/2017 2:06 [http-nio-8080-exec-10] INFO - <Archives for teacher were found>
+29/01/2017 2:06 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-3] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-3] INFO - <The course was found>
+29/01/2017 2:06 [http-nio-8080-exec-3] INFO - <Archives were found>
+29/01/2017 2:06 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 2:06 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-9] INFO - <User was found>
+29/01/2017 2:06 [http-nio-8080-exec-9] INFO - <The course was found>
+29/01/2017 2:06 [http-nio-8080-exec-9] INFO - <Archives were found>
+01/02/2017 1:00 [http-nio-8080-exec-6] INFO - <User was found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <All categories are provided>
+01/02/2017 1:00 [http-nio-8080-exec-2] INFO - <User was found>
+01/02/2017 1:00 [http-nio-8080-exec-2] INFO - <User was found>
+01/02/2017 1:00 [http-nio-8080-exec-2] INFO - <The course was found>
+01/02/2017 1:00 [http-nio-8080-exec-2] INFO - <Archives for category were found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <User was found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <User was found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <The course was found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <User was found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <User was found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <The course was found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <User was found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <User was found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <The course was found>
+01/02/2017 1:00 [http-nio-8080-exec-8] INFO - <Archives for category were found>
+01/02/2017 1:05 [http-nio-8080-exec-4] INFO - <User was found>
+01/02/2017 1:05 [http-nio-8080-exec-6] INFO - <All categories are provided>
+01/02/2017 1:05 [http-nio-8080-exec-8] INFO - <User was found>
+01/02/2017 1:05 [http-nio-8080-exec-8] INFO - <User was found>
+01/02/2017 1:05 [http-nio-8080-exec-8] INFO - <The course was found>
+01/02/2017 1:05 [http-nio-8080-exec-8] INFO - <Archives for category were found>
+01/02/2017 1:16 [http-nio-8080-exec-3] INFO - <Archives for teacher were found>
+01/02/2017 1:21 [http-nio-8080-exec-4] INFO - <Archives for teacher were found>
+01/02/2017 1:26 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+01/02/2017 1:33 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+01/02/2017 1:35 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+01/02/2017 1:35 [http-nio-8080-exec-8] INFO - <Archives for category were found>
+01/02/2017 1:35 [http-nio-8080-exec-2] INFO - <Archives for category were found>
+01/02/2017 1:35 [http-nio-8080-exec-6] INFO - <Archives for category were found>
+01/02/2017 1:36 [http-nio-8080-exec-8] INFO - <Archives for category were found>
+01/02/2017 1:46 [http-nio-8080-exec-9] INFO - <Archives for teacher were found>
+01/02/2017 1:49 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+01/02/2017 1:49 [http-nio-8080-exec-10] INFO - <Archives for teacher were found>
+01/02/2017 1:50 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+01/02/2017 1:51 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+01/02/2017 1:51 [http-nio-8080-exec-3] INFO - <Archives for teacher were found>
+01/02/2017 1:51 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+01/02/2017 1:52 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+01/02/2017 1:53 [http-nio-8080-exec-2] INFO - <Archives for category were found>
+01/02/2017 1:53 [http-nio-8080-exec-5] INFO - <Archives for category were found>
+01/02/2017 1:56 [http-nio-8080-exec-6] INFO - <Archives for category were found>
+01/02/2017 2:09 [http-nio-8080-exec-9] INFO - <Archives for teacher were found>
+01/02/2017 2:09 [http-nio-8080-exec-6] INFO - <Archives for category were found>
+01/02/2017 2:09 [http-nio-8080-exec-1] INFO - <Archives for category were found>
+01/02/2017 2:23 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+01/02/2017 2:24 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+01/02/2017 2:24 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
