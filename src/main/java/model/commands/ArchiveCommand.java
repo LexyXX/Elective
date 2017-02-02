@@ -9,6 +9,7 @@ import model.services.factory.ServiceFactoryImpl;
 
 import javax.servlet.ServletException;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -28,12 +29,12 @@ public class ArchiveCommand {
             int studentId = ((UserDTO) request.getSessionAttribute("user")).getId();
 
             archiveService.enroll(courseId, studentId);
+            return "student/student_home.jsp";
 
-            return "/view/student/student_home.jsp";
-
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 
@@ -45,12 +46,12 @@ public class ArchiveCommand {
 
             archiveService.putMark(archiveId, mark);
             request.removeSessionAttribute("archives");
+            return "teacher/teacher_home.jsp";
 
-            return "/view/teacher/teacher_home.jsp";
-
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 
@@ -60,60 +61,85 @@ public class ArchiveCommand {
             int archiveId = Integer.parseInt(requestURL.split("/")[3]);
 
             archiveService.remove(archiveId);
+            return "admin/admin_home.jsp";
 
-            return "/view/admin/admin_home.jsp";
-
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 
     public String search(RequestWrapper request) throws ServletException, IOException {
         String name = request.getParameter("name");
         int teacherId = ((UserDTO) request.getSessionAttribute("user")).getId();
-        List<ArchiveDTO> searchedArchives = archiveService.search(name, teacherId);
+        try {
+            List<ArchiveDTO> searchedArchives = archiveService.search(name, teacherId);
+            request.setSessionAttribute("searched_archive", searchedArchives);
+            return "teacher/searched_students.jsp";
 
-        request.setSessionAttribute("searched_archive", searchedArchives);
-        return "/view/teacher/searched_students.jsp";
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
     }
 
     public String getResults(RequestWrapper request) throws ServletException, IOException {
         int studentId = ((UserDTO) request.getSessionAttribute("user")).getId();
-        List<ArchiveDTO> archives = archiveService.getResults(studentId);
+        try {
+            List<ArchiveDTO> archives = archiveService.getResults(studentId);
+            request.setSessionAttribute("archive", archives);
+            return "student/results.jsp";
 
-        request.setSessionAttribute("archive", archives);
-        return "/view/student/results.jsp";
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
     }
 
     public String getArchivesForTeacher(RequestWrapper request) throws ServletException, IOException {
         int teacherId = ((UserDTO) request.getSessionAttribute("user")).getId();
-        List<ArchiveDTO> archives = archiveService.getArchiveForTeacher(teacherId);
+        try {
+            List<ArchiveDTO> archives = archiveService.getArchiveForTeacher(teacherId);
+            request.setSessionAttribute("archives", archives);
+            return "teacher/teacher_home.jsp";
 
-        request.setSessionAttribute("archives", archives);
-        return "/view/teacher/teacher_home.jsp";
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
     }
 
     public String getArchivesForCategory(RequestWrapper request) throws ServletException, IOException {
         try {
             String requestURL = request.getRequestURI();
             int categoryId = Integer.parseInt(requestURL.split("/")[3]);
+
             List<ArchiveDTO> archives = archiveService.getArchiveForCategory(categoryId);
-
             request.setSessionAttribute("archives", archives);
-            return "/view/admin/archives.jsp";
+            return "admin/archives.jsp";
 
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 
     public String getAllArchives(RequestWrapper request) throws ServletException, IOException {
-        List<ArchiveDTO> archives = archiveService.getAllArchives();
+        try {
+            List<ArchiveDTO> archives = archiveService.getAllArchives();
+            request.setSessionAttribute("archives", archives);
+            return "admin/admin_home.jsp";
 
-        request.setSessionAttribute("archives", archives);
-        return "/view/admin/admin_home.jsp";
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
     }
 
     public String checkEnrolled(RequestWrapper request) throws ServletException, IOException {
@@ -124,11 +150,12 @@ public class ArchiveCommand {
 
             boolean hasEnrolled = archiveService.hasEnrolled(courseId, userId);
             request.setSessionAttribute("course" + courseId, hasEnrolled);
-            return "/view/student/student_home.jsp";
+            return "student/searched_courses.jsp";
 
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 }

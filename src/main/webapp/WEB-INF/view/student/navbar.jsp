@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-<%@ taglib uri="/WEB-INF/tags.tld" prefix="mytag" %>
+
 
 <fmt:setLocale value="${locale == null ? 'en_US' : locale}"/>
 <fmt:setBundle basename="Lang" var="bundle"/>
@@ -28,8 +28,7 @@
 
         <div class="collapse navbar-collapse" id="collapse-1">
 
-            <form action="${pageContext.request.contextPath}/Controller/SearchCourse" method="post"
-                  class="navbar-form navbar-left">
+            <form action="${pageContext.request.contextPath}/Controller/SearchCourse" class="navbar-form navbar-left">
                 <div class="form-group">
                     <input type="text" class="form-control" name="name"
                            placeholder="<fmt:message key="course_name" bundle="${bundle}"/>">
@@ -63,11 +62,6 @@
                         </a></li>
                     </ul>
                 </li>
-
-                <p class="navbar-text hello-text">
-                    <mytag:message text="${sessionScope.user.firstName}"/>
-                </p>
-
 
             </ul>
         </div>

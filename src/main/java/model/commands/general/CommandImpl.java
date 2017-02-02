@@ -37,6 +37,7 @@ public class CommandImpl implements ICommand {
 
         String page = null;
 
+        //selects the corresponding command for the request
         switch (command) {
             case "Login":
                 page = userCommand.verifyLoginCredentials(request);
@@ -128,10 +129,17 @@ public class CommandImpl implements ICommand {
             case "ArchivesForCategory":
                 page = archiveCommand.getArchivesForCategory(request);
                 break;
+            case "GetCategoriesLimited":
+                page = courseCommand.getCategoriesLimited(request);
+                break;
+            case "AddCategory":
+                page = courseCommand.addCategory(request);
+                break;
         }
 
-        if (page != null)
-            response.sendRedirect(page);
+        if (page != null){
+            request.getRequest().getRequestDispatcher("/WEB-INF/view/"+page).forward(request.getRequest(), response.getResponse());
+        }
     }
 
 }

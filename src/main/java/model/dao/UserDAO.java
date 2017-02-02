@@ -17,7 +17,7 @@ import java.util.List;
 public class UserDAO {
     private final static Logger logger = Logger.getLogger(UserDAO.class);
 
-    public void insert(String fname, String lname, String login, String password) {
+    public void insert(String fname, String lname, String login, String password) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("insert.user"))) {
 
@@ -30,10 +30,11 @@ public class UserDAO {
 
         } catch (SQLException e) {
             logger.error(e);
+            throw e;
         }
     }
 
-    public UserDTO update(int id, String fname, String lname, String login, String password) {
+    public UserDTO update(int id, String fname, String lname, String login, String password) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("update.user"))) {
 
@@ -49,11 +50,11 @@ public class UserDAO {
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public void updateStatus(int id, boolean isTeacher, boolean isAdmin) {
+    public void updateStatus(int id, boolean isTeacher, boolean isAdmin) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("update.user.status"))) {
 
@@ -65,10 +66,11 @@ public class UserDAO {
 
         } catch (SQLException e) {
             logger.error(e);
+            throw e;
         }
     }
 
-    public UserDTO read(int id) {
+    public UserDTO read(int id) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.user.by.id"))) {
 
@@ -86,11 +88,11 @@ public class UserDAO {
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public UserDTO findByLogin(String login) {
+    public UserDTO findByLogin(String login) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.user.by.login"))) {
 
@@ -108,11 +110,11 @@ public class UserDAO {
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<UserDTO> readAllTeachers() {
+    public List<UserDTO> readAllTeachers() throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.all.teachers"))) {
 
@@ -128,11 +130,11 @@ public class UserDAO {
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<UserDTO> readAll() {
+    public List<UserDTO> readAll() throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.all.users"))) {
 
@@ -148,7 +150,7 @@ public class UserDAO {
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 }

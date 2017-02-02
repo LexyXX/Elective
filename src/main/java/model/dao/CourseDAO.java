@@ -17,9 +17,14 @@ import java.util.List;
 public class CourseDAO {
     private final static Logger logger = Logger.getLogger(CourseDAO.class);
 
-    public void insert(String name, Date startDate, Date endDate, int teacherId) {
+    public void insert(String name, Date startDate, Date endDate, int teacherId, int categoryId) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
-             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("add.course"))) {
+             PreparedStatement statement =
+                     connection.prepareStatement(DBHelper.getQuery("add.course"), Statement.RETURN_GENERATED_KEYS);
+             PreparedStatement statement1 =
+                     connection.prepareStatement(DBHelper.getQuery("add.course.to.category"))) {
+
+            connection.setAutoCommit(false);
 
             statement.setString(1, name);
             statement.setDate(2, startDate);
@@ -28,12 +33,41 @@ public class CourseDAO {
 
             statement.executeUpdate();
 
+            //adds the last inserted course to the corresponding category
+
+            ResultSet rs = statement.getGeneratedKeys();
+            rs.next();
+            int courseId = rs.getInt(1);
+
+            statement1.setInt(1, courseId);
+            statement1.setInt(2, categoryId);
+
+            statement1.executeUpdate();
+
+            connection.commit();
+
         } catch (SQLException e) {
             logger.error(e);
+            throw e;
         }
     }
 
-    public void update(int courseId, String name, Date startDate, Date endDate, int teacherId) {
+    public void insertCategory(String name, String descr) throws SQLException {
+        try (Connection connection = DBHelper.getConnection();
+             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("add.category"))) {
+
+            statement.setString(1, name);
+            statement.setString(2, descr);
+
+            statement.executeUpdate();
+
+        } catch (SQLException e) {
+            logger.error(e);
+            throw e;
+        }
+    }
+
+    public void update(int courseId, String name, Date startDate, Date endDate, int teacherId) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("update.course"))) {
 
@@ -47,12 +81,15 @@ public class CourseDAO {
 
         } catch (SQLException e) {
             logger.error(e);
+            throw e;
         }
     }
 
-    public CourseDTO read(int id) {
+    public CourseDTO read(int id) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.course.by.id"))) {
+
+            connection.setAutoCommit(false);
 
             statement.setInt(1, id);
 
@@ -67,17 +104,22 @@ public class CourseDAO {
                         res.getDate(3), res.getDate(4), userDAO.read(res.getInt(5)));
             }
 
+            connection.commit();
+
             return course;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<CourseDTO> readByName(String name) {
+    public List<CourseDTO> readByName(String name) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.all.courses.by.name"))) {
+
+            connection.setAutoCommit(false);
+
             statement.setString(1, name);
 
             ResultSet res = statement.executeQuery();
@@ -91,17 +133,22 @@ public class CourseDAO {
                         res.getDate(3), res.getDate(4), userDAO.read(res.getInt(5))));
             }
 
+            connection.commit();
+
             return courses;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<CourseDTO> readByUserId(int studentId) {
+    public List<CourseDTO> readByUserId(int studentId) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.all.courses.by.user.id"))) {
+
+            connection.setAutoCommit(false);
+
             statement.setInt(1, studentId);
 
             FactoryDAO factoryDAO = FactoryDAOImpl.getInstance();
@@ -115,18 +162,21 @@ public class CourseDAO {
                         res.getDate(3), res.getDate(4), userDAO.read(res.getInt(5))));
             }
 
+            connection.commit();
+
             return courses;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<CourseDTO> readAllForCategory(int categoryId) {
+    public List<CourseDTO> readAllForCategory(int categoryId) throws SQLException {
         try (Connection connection = DBHelper.getConnection();
-             PreparedStatement statement = connection.prepareStatement(
-                     DBHelper.getQuery("find.all.courses.for.category.before.today"))) {
+             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.all.courses.for.category.before.today"))) {
+
+            connection.setAutoCommit(false);
 
             statement.setInt(1, categoryId);
             ResultSet res = statement.executeQuery();
@@ -140,18 +190,21 @@ public class CourseDAO {
                         res.getDate(3), res.getDate(4), userDAO.read(res.getInt(5))));
             }
 
+            connection.commit();
+
             return courses;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<CourseDTO> readAll() {
+    public List<CourseDTO> readAll() throws SQLException {
         try (Connection connection = DBHelper.getConnection();
-             PreparedStatement statement =
-                     connection.prepareStatement(DBHelper.getQuery("find.all.courses"))) {
+             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.all.courses"))) {
+
+            connection.setAutoCommit(false);
 
             ResultSet res = statement.executeQuery();
 
@@ -164,15 +217,16 @@ public class CourseDAO {
                         res.getDate(3), res.getDate(4), userDAO.read(res.getInt(5))));
             }
 
+            connection.commit();
             return courses;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<CategoryDTO> readAllCategories() {
+    public List<CategoryDTO> readAllCategories() throws SQLException {
         try (Connection connection = DBHelper.getConnection();
              PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.all.categories"))) {
 
@@ -187,7 +241,29 @@ public class CourseDAO {
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
+        }
+    }
+
+    public List<CategoryDTO> readCategoriesLimited(int offset, int amount) throws SQLException {
+        try (Connection connection = DBHelper.getConnection();
+             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.all.categories.limited"))) {
+
+            statement.setInt(1, offset);
+            statement.setInt(2, amount);
+
+            ResultSet res = statement.executeQuery();
+
+            List<CategoryDTO> categories = new ArrayList<>();
+            while (res.next()) {
+                categories.add(new CategoryDTO(res.getInt(1), res.getString(2), res.getString(3)));
+            }
+
+            return categories;
+
+        } catch (SQLException e) {
+            logger.error(e);
+            throw e;
         }
     }
 }

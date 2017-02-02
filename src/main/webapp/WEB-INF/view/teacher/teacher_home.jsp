@@ -35,11 +35,14 @@
                         url="${pageContext.request.contextPath}/Controller/GetArchivesForTeacher/${sessionScope.user.id}"/>
             </c:if>
 
+            <c:if test="${sessionScope.archives.size() == 0}">
+                <h1><fmt:message key="no_data_yet" bundle="${bundle}"/></h1>
+            </c:if>
+
             <c:forEach items="${sessionScope.archives}" var="archive">
                 <div class="col-xs-4 col-lg-4">
                     <div class="thumbnail">
-                        <form action="${pageContext.request.contextPath}/Controller/PutMark/${archive.id}"
-                              method="post">
+                        <form action="${pageContext.request.contextPath}/Controller/PutMark/${archive.id}">
                             <fmt:message key="name" bundle="${bundle}"/>: ${archive.courseDTO.name} <br/>
                             <fmt:message key="start_date" bundle="${bundle}"/>: ${archive.courseDTO.startDate} <br/>
                             <fmt:message key="end_date" bundle="${bundle}"/>: ${archive.courseDTO.startDate} <br/>
@@ -58,7 +61,7 @@
         </div>
         <div class="col-xs-5 col-lg-5">
             <div class="thumbnail">
-                <form action="${pageContext.request.contextPath}/Controller/AddCourse" method="post">
+                <form action="${pageContext.request.contextPath}/Controller/AddCourse">
 
                     <label for="new_name"><fmt:message key="name" bundle="${bundle}"/>:</label>
                     <input type="text" class="form-control" id="new_name" name="name"/><br/>
@@ -70,6 +73,18 @@
                     <label for="new_end_date"><fmt:message key="end_date" bundle="${bundle}"/>:</label>
                     <input type="text" class="form-control" id="new_end_date" name="end_date"
                            placeholder="YYYY-MM-DD"/><br/>
+
+                    <label for="category"><fmt:message key="category" bundle="${bundle}"/>:</label>
+                    <select name="category" class="form-control" id="category">
+                        <c:if test="${sessionScope.categories == null}">
+                            <c:redirect url="${pageContext.request.contextPath}/Controller/GetAllCategories"/>
+                        </c:if>
+
+                        <c:forEach items="${sessionScope.categories}" var="category">
+                            <option value="${category.id}">${category.name}</option>
+                        </c:forEach>
+                    </select>
+                    <br/>
 
                     <input class="btn btn-success" type="submit"
                            value="<fmt:message key="add" bundle="${bundle}"/>"/>

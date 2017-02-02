@@ -14,6 +14,7 @@
     <title><fmt:message key="error" bundle="${bundle}"/></title>
 </head>
 <body>
-<fmt:message key="error" bundle="${bundle}"/>
+    <fmt:message key="error" bundle="${bundle}"/><br/>
+    <fmt:message key="${sessionScope.error}" bundle="${bundle}"/>
 </body>
 </html>

@@ -19,7 +19,7 @@ import java.util.List;
 public class ArchiveDAO {
     private final static Logger logger = Logger.getLogger(ArchiveDAO.class);
 
-    public void insert(int courseId, int studentId) {
+    public void insert(int courseId, int studentId) throws SQLException {
         try(Connection connection = DBHelper.getConnection();
             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("insert.archive"))) {
 
@@ -30,12 +30,15 @@ public class ArchiveDAO {
 
         } catch (SQLException e) {
             logger.error(e);
+            throw e;
         }
     }
 
-    public List<ArchiveDTO> readArchiveByUserName(String name, int teacherId) {
+    public List<ArchiveDTO> readArchiveByUserName(String name, int teacherId) throws SQLException {
         try(Connection connection = DBHelper.getConnection();
             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.archive.by.user.name"))) {
+
+            connection.setAutoCommit(false);
 
             statement.setString(1, name);
             statement.setString(2, name);
@@ -53,15 +56,17 @@ public class ArchiveDAO {
                         courseDAO.read(res.getInt(3)), res.getInt(4)));
             }
 
+            connection.commit();
+
             return archives;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public void updateMark(int id, int mark) {
+    public void updateMark(int id, int mark) throws SQLException {
         try(Connection connection = DBHelper.getConnection();
             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("update.archive.mark"))) {
 
@@ -72,10 +77,11 @@ public class ArchiveDAO {
 
         } catch (SQLException e) {
             logger.error(e);
+            throw e;
         }
     }
 
-    public void remove(int id) {
+    public void remove(int id) throws SQLException {
         try(Connection connection = DBHelper.getConnection();
             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("remove.archive"))) {
 
@@ -84,12 +90,15 @@ public class ArchiveDAO {
 
         } catch (SQLException e) {
             logger.error(e);
+            throw e;
         }
     }
 
-    public ArchiveDTO read(int courseId, int studentId){
+    public ArchiveDTO read(int courseId, int studentId) throws SQLException {
         try(Connection connection = DBHelper.getConnection();
             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.archive"))) {
+
+            connection.setAutoCommit(false);
 
             statement.setInt(1, courseId);
             statement.setInt(2, studentId);
@@ -106,17 +115,21 @@ public class ArchiveDAO {
                         courseDAO.read(res.getInt(3)), res.getInt(4));
             }
 
+            connection.commit();
+
             return archive;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<ArchiveDTO> readAllForUserId(int studentId){
+    public List<ArchiveDTO> readAllForUserId(int studentId) throws SQLException {
         try(Connection connection = DBHelper.getConnection();
             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.archive.for.user.id"))) {
+
+            connection.setAutoCommit(false);
 
             statement.setInt(1, studentId);
 
@@ -132,17 +145,21 @@ public class ArchiveDAO {
                         courseDAO.read(res.getInt(3)), res.getInt(4)));
             }
 
+            connection.commit();
+
             return archives;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<ArchiveDTO> readAllForTeacherId(int teacherId){
+    public List<ArchiveDTO> readAllForTeacherId(int teacherId) throws SQLException {
         try(Connection connection = DBHelper.getConnection();
             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.archive.for.teacher.id"))) {
+
+            connection.setAutoCommit(false);
 
             statement.setInt(1, teacherId);
 
@@ -159,18 +176,21 @@ public class ArchiveDAO {
             }
 
             logger.info("Archives for teacher were found");
+            connection.commit();
 
             return archiveDTO;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<ArchiveDTO> readAllForCategoryId(int categoryId){
+    public List<ArchiveDTO> readAllForCategoryId(int categoryId) throws SQLException {
         try(Connection connection = DBHelper.getConnection();
             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.archive.for.category.id"))) {
+
+            connection.setAutoCommit(false);
 
             statement.setInt(1, categoryId);
 
@@ -188,18 +208,21 @@ public class ArchiveDAO {
 
 
             logger.info("Archives for category were found");
+            connection.commit();
 
             return archives;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 
-    public List<ArchiveDTO> readAll(){
+    public List<ArchiveDTO> readAll() throws SQLException {
         try(Connection connection = DBHelper.getConnection();
             PreparedStatement statement = connection.prepareStatement(DBHelper.getQuery("find.all.archives"))) {
+
+            connection.setAutoCommit(false);
 
             ResultSet res = statement.executeQuery();
 
@@ -214,12 +237,13 @@ public class ArchiveDAO {
             }
 
             logger.info("All archives were found");
+            connection.commit();
 
             return archiveDTO;
 
         } catch (SQLException e) {
             logger.error(e);
-            return null;
+            throw e;
         }
     }
 }

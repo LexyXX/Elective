@@ -34,11 +34,14 @@
             <c:redirect url="${pageContext.request.contextPath}/Controller/GetAllCourses"/>
         </c:if>
 
+        <c:if test="${sessionScope.courses.size() == 0}">
+        <h1> <fmt:message key="no_data_yet" bundle="${bundle}"/></h1>
+        </c:if>
+
         <c:forEach items="${sessionScope.courses}" var="course">
             <div class="col-xs-6 col-lg-6">
                 <div class="thumbnail">
-                    <form action="${pageContext.request.contextPath}/Controller/ChangeCourse/${course.id}"
-                          method="post">
+                    <form action="${pageContext.request.contextPath}/Controller/ChangeCourse/${course.id}">
 
                         <label for="name"><fmt:message key="name" bundle="${bundle}"/>:</label>
                         <input type="text" class="form-control" id="name" name="name" value="${course.name}"/><br/>

@@ -28,6 +28,9 @@
 
 <div class="container">
     <div class="row list-group">
+        <c:if test="${sessionScope.archive.size() == 0}">
+            <h1> <fmt:message key="no_data_yet" bundle="${bundle}"/></h1>
+        </c:if>
         <c:forEach items="${sessionScope.archive}" var="archive">
             <div class="col-xs-4 col-lg-4">
                 <div class="thumbnail">

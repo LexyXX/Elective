@@ -27,8 +27,7 @@
 
         <div class="collapse navbar-collapse" id="collapse-1">
 
-            <form action="${pageContext.request.contextPath}/Controller/SearchStudent" method="post"
-                  class="navbar-form navbar-left">
+            <form action="${pageContext.request.contextPath}/Controller/SearchStudent" class="navbar-form navbar-left">
                 <div class="form-group">
                     <input type="text" class="form-control" name="name"
                            placeholder="<fmt:message key="students_name" bundle="${bundle}"/>">
@@ -55,9 +54,6 @@
                     </ul>
                 </li>
 
-                <p class="navbar-text hello-text">
-                    <mytag:message text="${sessionScope.user.firstName}"/>
-                </p>
             </ul>
         </div>
     </div>

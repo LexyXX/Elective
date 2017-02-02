@@ -21,19 +21,25 @@ public class MyFilter implements Filter {
         String uri = request.getRequestURI();
 
         if (!uri.equals("/") && !uri.startsWith("/Controller")
-                && !uri.startsWith("/view") && !uri.startsWith("/resources")){
-            req.getRequestDispatcher("/view/error.jsp").forward(req, resp);
+                 && !uri.startsWith("/resources")) {
+            request.getSession().setAttribute("error","page_not_found");
+            req.getRequestDispatcher("WEB-INF/view/error.jsp").forward(req, resp);
+            return;
         }
-        else {
-            if (uri.startsWith("/Controller/Language")) {
-                String locale = uri.contains("en") ? "en_US" : "ru_RU";
-                request.getSession().setAttribute("locale", locale);
 
-                req.getRequestDispatcher("/").forward(req, resp);
-            } else {
-                chain.doFilter(req, resp);
-            }
+        //language filter
+
+        if (uri.startsWith("/Controller/Language")) {
+            String locale = uri.contains("en") ? "en_US" : "ru_RU";
+            request.getSession().setAttribute("locale", locale);
+
+            req.getRequestDispatcher("/").forward(req, resp);
+            return;
         }
+
+        chain.doFilter(req, resp);
+
+
     }
 
     public void init(FilterConfig config) throws ServletException {

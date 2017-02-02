@@ -29,10 +29,15 @@
 
 <div class="container">
     <div class="row list-group">
+
+        <c:if test="${sessionScope.searched_archive.size() == 0}">
+            <h1> <fmt:message key="no_data_yet" bundle="${bundle}"/></h1>
+        </c:if>
+
         <c:forEach items="${sessionScope.searched_archive}" var="archive">
             <div class="col-xs-4 col-lg-4">
                 <div class="thumbnail">
-                    <form action="${pageContext.request.contextPath}/Controller/PutMark/${archive.id}" method="post">
+                    <form action="${pageContext.request.contextPath}/Controller/PutMark/${archive.id}">
                         <fmt:message key="name" bundle="${bundle}"/>: ${archive.courseDTO.name} <br/>
                         <fmt:message key="start_date" bundle="${bundle}"/>: ${archive.courseDTO.startDate} <br/>
                         <fmt:message key="end_date" bundle="${bundle}"/>: ${archive.courseDTO.startDate} <br/>

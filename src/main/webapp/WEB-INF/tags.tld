@@ -2,14 +2,24 @@
 
     <tlib-version>1.0</tlib-version>
     <jsp-version>2.0</jsp-version>
-    <short-name>My tag</short-name>
+    <short-name>Pagination tag</short-name>
+    <uri>http://pagination.com</uri>
+
     <tag>
-        <name>message</name>
-        <tag-class>controller.tags.MessageTag</tag-class>
-        <body-content>scriptless</body-content>
+        <name>nav</name>
+        <tag-class>controller.tags.PaginationTag</tag-class>
+        <body-content>empty</body-content>
         <attribute>
-            <name>text</name>
+            <name>action</name>
+            <required>true</required>
             <rtexprvalue>true</rtexprvalue>
+            <type>java.lang.String</type>
+        </attribute>
+        <attribute>
+            <name>pageCount</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>int</type>
         </attribute>
     </tag>
 

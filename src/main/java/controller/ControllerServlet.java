@@ -19,8 +19,7 @@ import java.io.IOException;
 @WebServlet(name = "ControllerServlet")
 public class ControllerServlet extends HttpServlet {
 
-
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    private void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String requestURL = request.getRequestURI();
         String command = requestURL.split("/")[2];
 
@@ -28,11 +27,11 @@ public class ControllerServlet extends HttpServlet {
         commandFactory.execute(command, new RequestWrapper(request), new ResponseWrapper(response));
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String requestURL = request.getRequestURI();
-        String command = requestURL.split("/")[2];
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+       processRequest(request, response);
+    }
 
-        ICommand commandFactory = CommandImpl.getInstance();
-        commandFactory.execute(command, new RequestWrapper(request), new ResponseWrapper(response));
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        processRequest(request, response);
     }
 }

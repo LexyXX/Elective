@@ -12,6 +12,7 @@ import model.services.factory.ServiceFactoryImpl;
 import javax.servlet.ServletException;
 import java.io.IOException;
 import java.sql.Date;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -26,21 +27,58 @@ public class CourseCommand {
 
     public String search(RequestWrapper request) throws ServletException, IOException {
         String name = request.getParameter("name");
-        List<CourseDTO> courseDTOs = courseService.search(name);
+        try {
+            List<CourseDTO> courseDTOs = courseService.search(name);
+            request.setSessionAttribute("searched_courses", courseDTOs);
+            return "student/searched_courses.jsp";
 
-        request.setSessionAttribute("searched_courses", courseDTOs);
-        return "/view/student/searched_courses.jsp";
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
+    }
+
+    public String getCategoriesLimited(RequestWrapper request) throws ServletException, IOException {
+        try {
+            int offset = 0;
+            UserDTO userDTO = (UserDTO) request.getSessionAttribute("user");
+
+            final int maxOnPage = userDTO.isAdmin() ? 4 : 8;
+
+            String page = request.getParameter("page");
+            if (page != null) {
+                offset = (Integer.parseInt(page) - 1) * maxOnPage;
+            }
+
+            List<CategoryDTO> categories = courseService.getCategoriesLimited(offset, maxOnPage);
+            request.setSessionAttribute("categories", categories);
+
+
+            if (userDTO.isAdmin()) {
+                return "admin/admin_home.jsp";
+            }
+
+            return "student/student_home.jsp";
+
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
     }
 
     public String getAllCategories(RequestWrapper request) throws ServletException, IOException {
-        List<CategoryDTO> categories = courseService.getAllCategories();
-        request.setSessionAttribute("categories", categories);
+        try {
+            List<CategoryDTO> categories = courseService.getAllCategories();
+            request.setSessionAttribute("categories", categories);
+            return "teacher/teacher_home.jsp";
 
-        UserDTO userDTO = (UserDTO) request.getSessionAttribute("user");
-        if (userDTO.isAdmin()) {
-            return "/view/admin/admin_home.jsp";
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
-        return "/view/student/student_home.jsp";
     }
 
 
@@ -51,25 +89,30 @@ public class CourseCommand {
 
             List<CourseDTO> courses = courseService.getCoursesForCategory(categoryId);
             request.setSessionAttribute("searched_courses", courses);
+            return "student/searched_courses.jsp";
 
-            return "/view/student/searched_courses.jsp";
-
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 
     public String getAllCourses(RequestWrapper request) throws ServletException, IOException {
-        List<CourseDTO> courses;
+        try {
+            List<CourseDTO> courses = courseService.getAllCourses();
+            request.setSessionAttribute("courses", courses);
+            return "admin/courses.jsp";
 
-        courses = courseService.getAllCourses();
-        request.setSessionAttribute("courses", courses);
-        return "/view/admin/courses.jsp";
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
     }
 
     public String goToCourses() throws ServletException, IOException {
-        return "/view/admin/courses.jsp";
+        return "admin/courses.jsp";
     }
 
     public String updateCourse(RequestWrapper request) throws ServletException, IOException {
@@ -83,11 +126,12 @@ public class CourseCommand {
 
             courseService.updateCourse(courseId, name, startDate, endDate, teacherId);
             request.removeSessionAttribute("courses");
-            return "/view/admin/courses.jsp";
+            return "admin/courses.jsp";
 
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 
@@ -97,26 +141,49 @@ public class CourseCommand {
             Date startDate = Date.valueOf(request.getParameter("start_date"));
             Date endDate = Date.valueOf(request.getParameter("end_date"));
             int teacherId = ((UserDTO) request.getSessionAttribute("user")).getId();
+            int categoryId = Integer.parseInt(request.getParameter("category"));
 
-            if (startDate.after(endDate) || startDate.before(new Date(System.currentTimeMillis()))){
+            if (startDate.after(endDate) || startDate.before(new Date(System.currentTimeMillis()))) {
                 throw new WrongDatesException("Wrong dates");
             }
 
-            courseService.add(name, startDate, endDate, teacherId);
-            return "/view/teacher/teacher_home.jsp";
+            courseService.add(name, startDate, endDate, teacherId, categoryId);
+            return "teacher/teacher_home.jsp";
 
-        } catch (IllegalArgumentException | WrongDatesException e) {
+        } catch (IllegalArgumentException | WrongDatesException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
+    }
+    public String addCategory(RequestWrapper request) throws ServletException, IOException {
+        try {
+            String name = request.getParameter("name");
+            String descr = request.getParameter("descr");
+
+            courseService.addCategory(name, descr);
+            request.removeSessionAttribute("categories");
+            return "admin/admin_home.jsp";
+
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 
     public String goToChosenCourses(RequestWrapper request) throws ServletException, IOException {
         int studentId = ((UserDTO) request.getSessionAttribute("user")).getId();
-        List<CourseDTO> courses = courseService.searchByUserId(studentId);
+        try {
+            List<CourseDTO> courses = courseService.searchByUserId(studentId);
+            request.setSessionAttribute("searched_courses", courses);
+            return "student/searched_courses.jsp";
 
-        request.setSessionAttribute("searched_courses", courses);
-        return "/view/student/searched_courses.jsp";
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
     }
 
 }

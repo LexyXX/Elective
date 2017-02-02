@@ -9,6 +9,7 @@ import org.mindrot.BCrypt;
 
 import javax.servlet.ServletException;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -25,66 +26,74 @@ public class UserCommand {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
 
-        UserDTO user = userService.verify(login);
+        try {
+            UserDTO user = userService.verify(login);
 
-        if (user == null || !BCrypt.checkpw(password, user.getPassword())) {
-            log.info("Login or password are incorrect");
-            request.setSessionAttribute("infoMessage", "login_or_password_are_incorrect");
-            return "/view/index.jsp";
-        }
 
-        if (user.isAdmin()) {
+            if (user == null || !BCrypt.checkpw(password, user.getPassword())) {
+                log.info("Login or password are incorrect");
+                request.setSessionAttribute("infoMessage", "login_or_password_are_incorrect");
+                return "index.jsp";
+            }
+
+            if (user.isAdmin()) {
+                request.setSessionAttribute("user", user);
+                log.info(user.getLogin() + "authorized");
+                return "admin/admin_home.jsp";
+            }
+
+            if (user.isTeacher()) {
+                request.setSessionAttribute("user", user);
+                log.info(user.getLogin() + "authorized");
+                return "teacher/teacher_home.jsp";
+            }
+
             request.setSessionAttribute("user", user);
             log.info(user.getLogin() + "authorized");
-            return "/view/admin/admin_home.jsp";
-        }
+            return "student/student_home.jsp";
 
-        if (user.isTeacher()) {
-            request.setSessionAttribute("user", user);
-            log.info(user.getLogin() + "authorized");
-            return "/view/teacher/teacher_home.jsp";
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
-
-        request.setSessionAttribute("user", user);
-        log.info(user.getLogin() + "authorized");
-        return "/view/student/student_home.jsp";
     }
 
     public String logout(RequestWrapper request) throws ServletException, IOException {
         request.invalidateSession();
-        return "/view/index.jsp";
+        return "index.jsp";
     }
 
     public String goToMyPage(RequestWrapper request) throws ServletException, IOException {
         UserDTO user = (UserDTO) request.getSessionAttribute("user");
 
         if (user.isTeacher()) {
-            return "/view/teacher/my_page.jsp";
+            return "teacher/my_page.jsp";
         }
         if (user.isAdmin()) {
-            return "/view/admin/my_page.jsp";
+            return "admin/my_page.jsp";
         }
-        return "/view/student/my_page.jsp";
+        return "student/my_page.jsp";
     }
 
     public String goToRegistrationPage() {
-        return "/view/student/registration.jsp";
+        return "student/registration.jsp";
     }
 
     public String goToStudentHomePage() {
-        return "/view/student/student_home.jsp";
+        return "student/student_home.jsp";
     }
 
     public String goToTeacherHomePage() {
-        return "/view/teacher/teacher_home.jsp";
+        return "teacher/teacher_home.jsp";
     }
 
     public String goToAdminHomePage() {
-        return "/view/admin/admin_home.jsp";
+        return "admin/admin_home.jsp";
     }
 
     public String goToUsers() {
-        return "/view/admin/students.jsp";
+        return "admin/students.jsp";
     }
 
     public String register(RequestWrapper request) {
@@ -95,11 +104,12 @@ public class UserCommand {
             String password = request.getParameter("password");
 
             userService.add(fname, lname, login, password);
-            return "/view/index.jsp";
+            return "index.jsp";
 
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 
@@ -116,16 +126,17 @@ public class UserCommand {
             request.setSessionAttribute("user", user);
 
             if (user.isTeacher()) {
-                return "/view/teacher/my_page.jsp";
+                return "teacher/my_page.jsp";
             }
             if (user.isAdmin()) {
-                return "/view/admin/my_page.jsp";
+                return "admin/my_page.jsp";
             }
-            return "/view/student/my_page.jsp";
+            return "student/my_page.jsp";
 
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 
@@ -139,23 +150,38 @@ public class UserCommand {
 
             userService.updateUserStatus(courseId, isTeacher != null, isAdmin != null);
             request.removeSessionAttribute("users");
-            return "/view/admin/students.jsp";
+            return "admin/students.jsp";
 
-        } catch (IllegalArgumentException e) {
+        } catch (IllegalArgumentException | SQLException e) {
             log.severe(e.toString());
-            return "/view/error.jsp";
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
         }
     }
 
     public String getAllUsers(RequestWrapper request) throws ServletException, IOException {
-        List<UserDTO> users = userService.getAllUsers();
-        request.setSessionAttribute("users", users);
-        return "/view/admin/students.jsp";
+        try {
+            List<UserDTO> users = userService.getAllUsers();
+            request.setSessionAttribute("users", users);
+            return "admin/students.jsp";
+
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
     }
 
     public String getAllTeachers(RequestWrapper request) throws ServletException, IOException {
-        List<UserDTO> teachers = userService.getAllTeachers();
-        request.setSessionAttribute("teachers", teachers);
-        return "/view/admin/courses.jsp";
+        try {
+            List<UserDTO> teachers = userService.getAllTeachers();
+            request.setSessionAttribute("teachers", teachers);
+            return "admin/courses.jsp";
+
+        } catch (SQLException e) {
+            log.severe(e.toString());
+            request.setSessionAttribute("error", e.toString());
+            return "error.jsp";
+        }
     }
 }

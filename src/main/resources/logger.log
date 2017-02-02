@@ -616,3 +616,45 @@
 01/02/2017 2:23 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
 01/02/2017 2:24 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
 01/02/2017 2:24 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+01/02/2017 1:29 [main] ERROR - <javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial>
+01/02/2017 1:31 [main] ERROR - <javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial>
+01/02/2017 1:33 [main] ERROR - <javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial>
+01/02/2017 3:01 [main] ERROR - <javax.naming.NoInitialContextException: Need to specify class name in environment or system property, or as an applet parameter, or in an application resource file:  java.naming.factory.initial>
+01/02/2017 11:43 [http-nio-8080-exec-10] INFO - <Archives for teacher were found>
+01/02/2017 11:44 [http-nio-8080-exec-2] INFO - <Archives for category were found>
+02/02/2017 1:26 [http-nio-8081-exec-4] ERROR - <javax.naming.NamingException: Data source rejected establishment of connection,  message from server: "Too many connections">
+02/02/2017 1:26 [http-nio-8081-exec-5] ERROR - <javax.naming.NamingException: Data source rejected establishment of connection,  message from server: "Too many connections">
+02/02/2017 1:26 [http-nio-8081-exec-9] ERROR - <javax.naming.NamingException: Data source rejected establishment of connection,  message from server: "Too many connections">
+02/02/2017 1:27 [http-nio-8081-exec-4] ERROR - <javax.naming.NamingException: Data source rejected establishment of connection,  message from server: "Too many connections">
+02/02/2017 1:43 [http-nio-8080-exec-1] INFO - <Archives for teacher were found>
+02/02/2017 1:43 [http-nio-8080-exec-4] INFO - <Archives for category were found>
+02/02/2017 1:43 [http-nio-8080-exec-6] INFO - <Archives for category were found>
+02/02/2017 1:55 [http-nio-8080-exec-2] INFO - <Archives for teacher were found>
+02/02/2017 2:12 [http-nio-8080-exec-3] INFO - <Archives for teacher were found>
+02/02/2017 2:20 [http-nio-8080-exec-10] INFO - <Archives for teacher were found>
+02/02/2017 2:21 [http-nio-8080-exec-8] INFO - <Archives for category were found>
+02/02/2017 2:21 [http-nio-8080-exec-2] INFO - <Archives for category were found>
+02/02/2017 2:21 [http-nio-8080-exec-9] INFO - <Archives for teacher were found>
+02/02/2017 2:21 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+02/02/2017 2:57 [http-nio-8080-exec-1] INFO - <Archives for teacher were found>
+02/02/2017 2:57 [http-nio-8080-exec-4] INFO - <Archives for teacher were found>
+02/02/2017 2:57 [http-nio-8080-exec-2] INFO - <Archives for category were found>
+02/02/2017 2:57 [http-nio-8080-exec-1] INFO - <Archives for category were found>
+02/02/2017 8:14 [http-nio-8080-exec-10] INFO - <Archives for teacher were found>
+02/02/2017 8:17 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+02/02/2017 8:18 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+02/02/2017 8:31 [http-nio-8080-exec-3] INFO - <Archives for teacher were found>
+02/02/2017 8:32 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+02/02/2017 8:34 [http-nio-8080-exec-8] INFO - <Archives for teacher were found>
+02/02/2017 8:39 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+02/02/2017 8:41 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+02/02/2017 8:57 [http-nio-8080-exec-2] INFO - <Archives for teacher were found>
+02/02/2017 9:33 [http-nio-8080-exec-10] INFO - <Archives for teacher were found>
+02/02/2017 9:35 [http-nio-8080-exec-5] INFO - <Archives for teacher were found>
+02/02/2017 9:37 [http-nio-8080-exec-10] INFO - <Archives for teacher were found>
+02/02/2017 9:38 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>
+02/02/2017 9:40 [http-nio-8080-exec-1] INFO - <Archives for category were found>
+02/02/2017 9:40 [http-nio-8080-exec-6] INFO - <Archives for category were found>
+02/02/2017 9:41 [http-nio-8080-exec-3] ERROR - <com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'lexy' for key 'login_UNIQUE'>
+02/02/2017 9:41 [http-nio-8080-exec-5] ERROR - <com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry 'hhh' for key 'login_UNIQUE'>
+02/02/2017 9:43 [http-nio-8080-exec-6] INFO - <Archives for teacher were found>

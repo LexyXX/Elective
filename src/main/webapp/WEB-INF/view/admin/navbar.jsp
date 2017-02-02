@@ -51,12 +51,6 @@
                     </ul>
                 </li>
 
-
-                <p class="navbar-text hello-text">
-                    <mytag:message text="${sessionScope.user.firstName}"/>
-                </p>
-
-
             </ul>
         </div>
 

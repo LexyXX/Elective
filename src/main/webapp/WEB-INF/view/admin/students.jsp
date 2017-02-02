@@ -33,10 +33,14 @@
             <c:redirect url="${pageContext.request.contextPath}/Controller/GetAllUsers"/>
         </c:if>
 
+        <c:if test="${sessionScope.users.size() == 0}">
+           <h1> <fmt:message key="no_data_yet" bundle="${bundle}"/></h1>
+        </c:if>
+
         <c:forEach items="${sessionScope.users}" var="user">
             <div class="col-xs-4 col-lg-4">
                 <div class="thumbnail">
-                    <form action="${pageContext.request.contextPath}/Controller/ChangeUser/${user.id}" method="post">
+                    <form action="${pageContext.request.contextPath}/Controller/ChangeUser/${user.id}">
 
                         <fmt:message key="fname" bundle="${bundle}"/>:
                             ${user.firstName}<br/>
