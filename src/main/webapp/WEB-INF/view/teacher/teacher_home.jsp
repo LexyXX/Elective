@@ -42,7 +42,7 @@
             <c:forEach items="${sessionScope.archives}" var="archive">
                 <div class="col-xs-4 col-lg-4">
                     <div class="thumbnail">
-                        <form action="${pageContext.request.contextPath}/Controller/PutMark/${archive.id}">
+                        <form action="${pageContext.request.contextPath}/Controller/PutMark/${archive.id}" method="post">
                             <fmt:message key="name" bundle="${bundle}"/>: ${archive.courseDTO.name} <br/>
                             <fmt:message key="start_date" bundle="${bundle}"/>: ${archive.courseDTO.startDate} <br/>
                             <fmt:message key="end_date" bundle="${bundle}"/>: ${archive.courseDTO.startDate} <br/>
@@ -61,7 +61,7 @@
         </div>
         <div class="col-xs-5 col-lg-5">
             <div class="thumbnail">
-                <form action="${pageContext.request.contextPath}/Controller/AddCourse">
+                <form action="${pageContext.request.contextPath}/Controller/AddCourse" method="post">
 
                     <label for="new_name"><fmt:message key="name" bundle="${bundle}"/>:</label>
                     <input type="text" class="form-control" id="new_name" name="name"/><br/>

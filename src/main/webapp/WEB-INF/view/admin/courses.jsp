@@ -41,7 +41,7 @@
         <c:forEach items="${sessionScope.courses}" var="course">
             <div class="col-xs-6 col-lg-6">
                 <div class="thumbnail">
-                    <form action="${pageContext.request.contextPath}/Controller/ChangeCourse/${course.id}">
+                    <form action="${pageContext.request.contextPath}/Controller/ChangeCourse/${course.id}" method="post">
 
                         <label for="name"><fmt:message key="name" bundle="${bundle}"/>:</label>
                         <input type="text" class="form-control" id="name" name="name" value="${course.name}"/><br/>

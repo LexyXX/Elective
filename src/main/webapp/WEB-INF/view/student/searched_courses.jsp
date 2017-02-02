@@ -37,7 +37,7 @@
         <c:forEach items="${sessionScope.searched_courses}" var="course">
             <div class="col-xs-4 col-lg-4">
                 <div class="thumbnail">
-                    <form action="${pageContext.request.contextPath}/Controller/Enroll/${course.id}">
+                    <form action="${pageContext.request.contextPath}/Controller/Enroll/${course.id}" method="post">
                         <fmt:message key="name" bundle="${bundle}"/>: ${course.name} <br/>
                         <fmt:message key="start_date" bundle="${bundle}"/>: ${course.startDate} <br/>
                         <fmt:message key="end_date" bundle="${bundle}"/>: ${course.endDate} <br/>

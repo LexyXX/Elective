@@ -37,7 +37,7 @@
         <c:forEach items="${sessionScope.searched_archive}" var="archive">
             <div class="col-xs-4 col-lg-4">
                 <div class="thumbnail">
-                    <form action="${pageContext.request.contextPath}/Controller/PutMark/${archive.id}">
+                    <form action="${pageContext.request.contextPath}/Controller/PutMark/${archive.id}" method="post">
                         <fmt:message key="name" bundle="${bundle}"/>: ${archive.courseDTO.name} <br/>
                         <fmt:message key="start_date" bundle="${bundle}"/>: ${archive.courseDTO.startDate} <br/>
                         <fmt:message key="end_date" bundle="${bundle}"/>: ${archive.courseDTO.startDate} <br/>

@@ -40,7 +40,7 @@
         <c:forEach items="${sessionScope.users}" var="user">
             <div class="col-xs-4 col-lg-4">
                 <div class="thumbnail">
-                    <form action="${pageContext.request.contextPath}/Controller/ChangeUser/${user.id}">
+                    <form action="${pageContext.request.contextPath}/Controller/ChangeUser/${user.id}" method="post">
 
                         <fmt:message key="fname" bundle="${bundle}"/>:
                             ${user.firstName}<br/>

@@ -65,7 +65,7 @@
             <div class="thumbnail add-category">
                 <h3 class="text-center"><fmt:message key="add_category" bundle="${bundle}"/></h3>
 
-                <form action="${pageContext.request.contextPath}/Controller/AddCategory">
+                <form action="${pageContext.request.contextPath}/Controller/AddCategory" method="post">
 
                     <label for="new_name"><fmt:message key="name" bundle="${bundle}"/>:</label>
                     <input type="text" class="form-control" id="new_name" name="name"/><br/>
